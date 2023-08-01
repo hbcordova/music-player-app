@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player App - hbcordova</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="player">
+            <div class="player__navigation">
+                <div class="player__btn-primary player__btn-small">
+                    <i class='bx bx-chevron-left' ></i>
+                </div>
+                <div class="player__title">
+                    <div class="player__title-name">Cure For Me</div>
+                    <div class="player__title-artist">Aurora</div>
+                </div>
+                <div class="player__btn-primary player__btn-small">
+                    <i class='bx bx-menu' ></i>
+                </div>
+            </div>
+
+            <div class="player__album">
+                <img class="player__albun-img" src="img/cure-for-me-album.jpeg" alt="Cure For Me Album">
+            </div>
+
+            <audio preload="metadata" class="player__audio" controls id="audio">
+                <source src="audio/AURORA-Cure_For_Me.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class="player__actions">
+                <div class="player__timeline">
+                    <div class="player__timeline-time">
+                        <span class="time__start">0:00</span>
+                        <span class="time__finish">3:21</span>
+                    </div>
+                    <input class="player__range" type="range" min="0" value="0">
+                </div>
+    
+                <div class="player__controls">
+                    <div id="preview" class="player__btn-secondary player__btn-medium">
+                        <i class='bx bx-skip-previous' ></i>
+                    </div>
+                    <div id="play" class="player__btn-primary player__btn-medium">
+                        <i class='bx bx-play'></i>
+                        <i class='bx bx-pause hide' ></i>
+                    </div>
+                    <div id="nexr" class="player__btn-secondary player__btn-medium">
+                        <i class='bx bx-skip-next' ></i>
+                    </div>
+                </div>
+
+                <div class="music__next">
+                    <div class="music__next-album">
+                        <img src="img/worship-now.jpg" alt="Defender Worship Album">
+                    </div>
+                    <div class="music__next-description">
+                        <p>Up Next</p>
+                        <p>Defender - CCV Worship</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
